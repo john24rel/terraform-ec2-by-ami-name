@@ -38,24 +38,19 @@ variable "https_port" {
   default = "443"
 }
 variable "s3_bucket" {
-  type = string
-  default = "${var.s3_bucket}"
+  values = "${var.s3_bucket}"
 }
 variable "s3_folder_project" {
-   type = string
-  default = "${var.s3_bucket}"
+  values = "${var.s3_bucket}"
 }
 variable "s3_folder_region" {
-   type = string
-  default = "${var.s3_folder_region}"
+  values = "${var.s3_folder_region}"
 }
 variable "s3_folder_type" {
-   type = string
-  default = "${var.s3_folder_type}"
+  values = "${var.s3_folder_type}"
 }
 variable "s3_tfstate_file" {
-   type = string
-  default = "${var.s3_bucket}"
+   values = "${var.s3_bucket}"
 }
 variable "any_port" {
   type    = string
