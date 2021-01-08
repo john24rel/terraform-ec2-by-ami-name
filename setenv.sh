@@ -72,4 +72,9 @@ terraform {
 }
 EOF
 cat backend.tf
+echo -e  "\nvariable "s3_bucket" {}
+          \nvariable "s3_folder_project" {}
+          \nvariable "s3_folder_region" {}
+          \nvariable "s3_folder_type" {}
+          \nvariable "s3_tfstate_file" {} " > variable.tf
 
