@@ -39,23 +39,23 @@ variable "https_port" {
 }
 variable "s3_bucket" {
   type = string
-  default = var.s3_bucket
+  default = "${var.s3_bucket}"
 }
 variable "s3_folder_project" {
    type = string
-  default = var.s3_bucket
+  default = "${var.s3_bucket}"
 }
 variable "s3_folder_region" {
    type = string
-  default = var.s3_folder_region
+  default = "${var.s3_folder_region}"
 }
 variable "s3_folder_type" {
    type = string
-  default = var.s3_folder_type
+  default = "${var.s3_folder_type}"
 }
 variable "s3_tfstate_file" {
    type = string
-  default = var.s3_bucket
+  default = "${var.s3_bucket}"
 }
 variable "any_port" {
   type    = string
